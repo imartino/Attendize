@@ -65,7 +65,7 @@ return [
     'default_date_picker_format' => 'Y-m-d',
     'default_datetime_format'    => 'Y-m-d, H:i',
     'default_query_cache'        => 120, #Minutes
-    'default_locale'             => 'en',
+    'default_locale'             => 'es',
     'default_payment_gateway'    => 1, #Stripe=1 Paypal=2 BitPay=3 MIGS=4
 
     'cdn_url_user_assets'   => '',
