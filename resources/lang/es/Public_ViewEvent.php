@@ -54,7 +54,7 @@ return [
   'quantity_full' => 'Cantidad',
   'reference' => 'Referencia',
   'refunded_amount' => 'Monto de reembolso',
-  'register' => 'AGENDARSE',
+  'register' => 'RESERVAR',
   'sales_have_ended' => 'La venta de entradas se ha acabado',
   'sales_have_not_started' => 'La venta de entrada no ha iniciado',
   'send_message_submit' => 'Mensaje enviado',
