@@ -4,6 +4,7 @@
   "description": "Attendize Ticketing Platform",
   "main": "public/index.php",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "less": "~1.7.0"
   },
   "devDependencies": {

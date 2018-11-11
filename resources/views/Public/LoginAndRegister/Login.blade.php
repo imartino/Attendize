@@ -9,7 +9,7 @@
             <div class="panel">
                 <div class="panel-body">
                     <div class="logo">
-                        {!!HTML::image('assets/images/logo-dark.png')!!}
+                    <img style="width: 75px;" class="logo" alt="CARC" src="{{asset('assets/images/logo_carc.png')}}"/>
                     </div>
 
                     @if(Session::has('failed'))
