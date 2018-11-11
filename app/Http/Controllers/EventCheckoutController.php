@@ -664,7 +664,7 @@ class EventCheckoutController extends Controller
         //save the order to the database
         DB::commit();
         //forget the order in the session
-        //session()->forget('ticket_order_' . $event->id);
+        session()->forget('ticket_order_' . $event->id);
 
         // Queue up some tasks - Emails to be sent, PDFs etc.
         Log::info('Firing the event');
