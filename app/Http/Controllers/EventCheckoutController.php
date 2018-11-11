@@ -62,7 +62,7 @@ class EventCheckoutController extends Controller
         $order_expires_time = Carbon::now()->addMinutes(config('attendize.checkout_timeout_after'));
 
         $event = Event::findOrFail($event_id);
-
+        
         if (!$request->has('tickets')) {
             return response()->json([
                 'status'  => 'error',
@@ -185,8 +185,8 @@ class EventCheckoutController extends Controller
             $activeAccountPaymentGateway->fill(['payment_gateway_id' => config('attendize.payment_gateway_dummy')]);
             $paymentGateway= $activeAccountPaymentGateway;
         } else {
-            $activeAccountPaymentGateway = $event->account->active_payment_gateway->count() ? $event->account->active_payment_gateway->firstOrFail() : false;
-            $paymentGateway = $event->account->active_payment_gateway->count() ? $event->account->active_payment_gateway->payment_gateway : false;
+            $activeAccountPaymentGateway = $event->account->active_payment_gateway ? $event->account->active_payment_gateway->count() ? $event->account->active_payment_gateway->firstOrFail() : false : false;
+            $paymentGateway = $event->account->active_payment_gateway ? $event->account->active_payment_gateway->count() ? $event->account->active_payment_gateway->payment_gateway : false : false;
         }
 
         /*
