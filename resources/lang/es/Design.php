@@ -5,10 +5,10 @@
 
 return array (
   //============================== New strings to translate ==============================//
-  'event_page_preview' => 'Event Page Preview',
+  'event_page_preview' => 'Vista previa de la página del evento',
   //==================================== Translations ====================================//
-  'background_options' => 'Background Options',
+  'background_options' => 'Opciones de fondo',
   'images_provided_by_pixabay' => 'Images Provided By <b>PixaBay.com</b>',
-  'select_from_available_images' => 'Select From Available Images',
-  'use_a_colour_for_the_background' => 'Use a colour for the background',
+  'select_from_available_images' => 'Seleccione de las imágenes disponibles',
+  'use_a_colour_for_the_background' => 'Usa un color para el fondo.',
 );
