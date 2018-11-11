@@ -549,8 +549,10 @@ class EventCheckoutController extends Controller
             if ($ticket_order['affiliate_referral']) {
                 $affiliate = Affiliate::where('name', '=', $ticket_order['affiliate_referral'])
                     ->where('event_id', '=', $event_id)->first();
-                $affiliate->increment('sales_volume', $order->amount + $order->organiser_booking_fee);
-                $affiliate->increment('tickets_sold', $ticket_order['total_ticket_quantity']);
+                if ($affiliate) {
+                    $affiliate->increment('sales_volume', $order->amount + $order->organiser_booking_fee);
+                    $affiliate->increment('tickets_sold', $ticket_order['total_ticket_quantity']);
+                }
             }
 
             /*
@@ -560,6 +562,7 @@ class EventCheckoutController extends Controller
                 'event_id' => $event_id,
                 'date'     => DB::raw('CURRENT_DATE'),
             ]);
+            
             $event_stats->increment('tickets_sold', $ticket_order['total_ticket_quantity']);
 
             if ($ticket_order['order_requires_payment']) {
@@ -643,15 +646,12 @@ class EventCheckoutController extends Controller
 
                         }
                     }
-
-
                     /* Keep track of total number of attendees */
                     $attendee_increment++;
                 }
             }
 
         } catch (Exception $e) {
-
             Log::error($e);
             DB::rollBack();
 
@@ -664,12 +664,11 @@ class EventCheckoutController extends Controller
         //save the order to the database
         DB::commit();
         //forget the order in the session
-        session()->forget('ticket_order_' . $event->id);
+        //session()->forget('ticket_order_' . $event->id);
 
         // Queue up some tasks - Emails to be sent, PDFs etc.
         Log::info('Firing the event');
         event(new OrderCompletedEvent($order));
-
 
         if ($return_json) {
             return response()->json([
