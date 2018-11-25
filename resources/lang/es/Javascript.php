@@ -1,17 +1,17 @@
 <?php
 
 return [
-    "processing" => "Just a second...",
-    "time_run_out" => "You have run out of time! You will have to restart the order process.",
-    "just_2_minutes" => "You only have 2 minutes left to complete this order!",
-    "whoops" => 'Whoops!, it looks like the server returned an error.
-                   Please try again, or contact the webmaster if the problem persists.',
-    "whoops2" => 'Something went wrong! Refresh the page and try again',
-    "whoops_and_error" => "Whoops!, something has gone wrong.<br><br>:code :error",
-    "at_least_one_option" => 'You must have at least one option.',
-    "credit_card_error" => 'The credit card number appears to be invalid.',
-    "expiry_error" => 'The expiration date appears to be invalid.',
-    "cvc_error" => 'The CVC number appears to be invalid.',
-    "card_validation_error" => 'Please check your card details and try again.',
-    "checkin_init_error" => 'There was an error while initializing scanner. Check if you\'re connecting through secure page (https) and that your browser supports the scanner.',
+    "processing" => "Sólo un segundo...",
+    "time_run_out" => "¡Se te ha acabado el tiempo! Tendrás que reiniciar el proceso de pedido.",
+    "just_2_minutes" => "¡Solo te quedan 2 minutos para completar este pedido!",
+    "whoops" => '¡Vaya! Parece que el servidor devolvió un error.
+    Vuelva a intentarlo o póngase en contacto con el webmaster si el problema persiste.',
+    "whoops2" => '¡Algo salió mal! Actualiza la página y vuelve a intentarlo.',
+    "whoops_and_error" => "¡Vaya !, algo ha ido mal.<br><br>:code :error",
+    "at_least_one_option" => 'Debes tener al menos una opción.',
+    "credit_card_error" => 'El número de la tarjeta de crédito parece ser inválido.',
+    "expiry_error" => 'La fecha de caducidad parece no ser válida.',
+    "cvc_error" => 'El número de CVC parece no ser válido.',
+    "card_validation_error" => 'Por favor verifique los detalles de su tarjeta y vuelva a intentarlo.',
+    "checkin_init_error" => 'Hubo un error al inicializar el escáner. Compruebe si se está conectando a través de una página segura (https) y que su navegador es compatible con el escáner.',
 ];

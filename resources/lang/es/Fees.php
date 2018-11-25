@@ -4,12 +4,12 @@
 *************************************************************************/
 
 return array (
-  'service_fee_fixed_price' => 'Service Fee Fixed Price',
-  'service_fee_fixed_price_help' => 'e.g: enter <b>1.25</b> for <b>:cur1.25</b>',
+  'service_fee_fixed_price' => 'Tarifa de servicio precio fijo',
+  'service_fee_fixed_price_help' => 'Ej: <b>1.25</b>',
   'service_fee_fixed_price_placeholder' => '0.00',
-  'organiser_fees' => 'Organiser Fees',
-  'organiser_fees_text' => 'These are optional fees you can include in the cost of each ticket. This charge will appear on buyer\'s invoices as \'<b>BOOKING FEES</b>\'.',
-  'service_fee_percentage' => 'Service Fee Percentage',
-  'service_fee_percentage_help' => 'e.g: enter <b>3.5</b> for <b>3.5%</b>',
+  'organiser_fees' => 'Honorarios del organizador',
+  'organiser_fees_text' => 'Estas son tarifas opcionales que puede incluir en el costo de cada boleto. Este cargo aparecerá en las facturas del comprador como \'<b>COSTOS DE RESERVA</b>\'.',
+  'service_fee_percentage' => 'Porcentaje de tarifa de servicio',
+  'service_fee_percentage_help' => 'Ej: <b>3.5</b>',
   'service_fee_percentage_placeholder' => '0',
 );
