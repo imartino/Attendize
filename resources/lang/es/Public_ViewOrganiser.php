@@ -6,12 +6,12 @@
 return array (
   //============================== New strings to translate ==============================//
   // Defined in file C:\\wamp\\www\\attendize\\resources\\views\\Public\\ViewOrganiser\\Partials\\EventListingPanel.blade.php
-  'information' => 'Information',
+  'information' => 'Información',
   // Defined in file C:\\wamp\\www\\attendize\\resources\\views\\Public\\ViewOrganiser\\Partials\\EventListingPanel.blade.php
-  'tickets' => 'Tickets',
+  'tickets' => 'Entradas',
   //==================================== Translations ====================================//
-  'no_events' => 'There are no :panel_title to display.',
-  'organiser_dashboard' => 'Organiser Dashboard',
-  'past_events' => 'Past events',
-  'upcoming_events' => 'Upcoming events',
+  'no_events' => 'No existen :panel_title para mostrar.',
+  'organiser_dashboard' => 'Tablero del Organizador',
+  'past_events' => 'Eventos pasados',
+  'upcoming_events' => 'Próximos Eventos',
 );

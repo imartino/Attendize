@@ -6,13 +6,13 @@
 return array (
   //============================== New strings to translate ==============================//
   // Defined in file C:\\wamp\\www\\attendize\\resources\\views\\Shared\\Layouts\\Master.blade.php
-  'account_settings' => 'Account Settings',
+  'account_settings' => 'Configuraciones de la cuenta',
   // Defined in file C:\\wamp\\www\\attendize\\resources\\views\\Shared\\Layouts\\Master.blade.php
-  'create_organiser' => 'Create Organiser',
+  'create_organiser' => 'Crear Organizador',
   // Defined in file C:\\wamp\\www\\attendize\\resources\\views\\Shared\\Layouts\\Master.blade.php
-  'feedback_bug_report' => 'Feedback / Bug Report',
+  'feedback_bug_report' => 'Comentarios / Informe de errores',
   // Defined in file C:\\wamp\\www\\attendize\\resources\\views\\Shared\\Layouts\\Master.blade.php
-  'my_profile' => 'My Profile',
+  'my_profile' => 'Mi perfil',
   // Defined in file C:\\wamp\\www\\attendize\\resources\\views\\Shared\\Layouts\\Master.blade.php
-  'sign_out' => 'Sign Out',
+  'sign_out' => 'Desconectar',
 );

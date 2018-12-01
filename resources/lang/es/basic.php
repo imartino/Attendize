@@ -33,7 +33,7 @@ return array (
   'months_short' => '|Ene|Feb|Mar|Abr|May|Jun|Jul|Ago|Sep|Oct|Nov|Dic|',
   'no' => 'No',
   'order_form' => 'Formulario de compra',
-  'orders' => 'Ventas',
+  'orders' => 'Pedidos',
   'promote' => 'Promocionar',
   'save_changes' => 'Guardar Cambios',
   'save_details' => 'Guardar Detalles',
