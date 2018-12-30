@@ -515,8 +515,9 @@ class EventCheckoutController extends Controller
             if (isset($ticket_order['transaction_id'])) {
                 $order->transaction_id = $ticket_order['transaction_id'][0];
             }
-            var_dump($_REQUEST['pay_offline']);
-            die();
+            if (!isset($request_data['pay_offline']) && isset($_REQUEST['pay_offline'])) {
+                $request_data['pay_offline'] = $_REQUEST['pay_offline'];
+            }
             if ($ticket_order['order_requires_payment'] && !isset($request_data['pay_offline'])) {
                 $order->payment_gateway_id = $ticket_order['payment_gateway']->id;
             }
